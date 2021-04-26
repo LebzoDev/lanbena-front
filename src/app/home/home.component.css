@@ -1,0 +1,122 @@
+.sidenav-container {
+  height: max-content;
+}
+
+.sidenav {
+  width: 200px;
+  background-color: #424b53;
+  color: aliceblue;
+  display: none;
+}
+
+.sidenav .mat-toolbar {
+  background:   #d4ac0d ;
+}
+
+.caroussel-img{
+  width: 100vw;
+  height: 60vh;
+}
+
+.header-sensoin{
+  background-color:  #455a64 ;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  font-weight: bold;
+  height: 20vh;
+  position: relative;
+}
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.button-header{
+  color: #455a64;;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 35px;
+  width: 35px;
+  outline: black;
+  background-color: #455a64;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid none;
+  background-image: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size:  20px;
+  color: aliceblue;
+}
+
+.example-card {
+  max-width: 25%;
+  float: left;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+
+@media screen and (max-width:1024px) and (min-width:600px){
+  .sidenav {
+    width: 30%;
+    background-color: #2b2d42;
+  }
+
+.example-card {
+  max-width: 100%;
+}
+
+} 
+@media screen and (max-width:600px){
+  .sidenav {
+    width: 200px;
+    background-color: #424b53;
+    color: aliceblue;
+    display: content;
+  }
+  .example-card {
+    max-width: 100%;
+  }
+  /* mat-nav-list a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+  } */
+
+  td{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2vw;
+    text-align: center;
+  }
+
+  .close_menu{
+    display: contents;
+  }
+  .selection_element{
+    font-size: 1.2vw;
+  }
+}
