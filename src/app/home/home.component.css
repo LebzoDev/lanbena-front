@@ -29,6 +29,69 @@
   height: 20vh;
   position: relative;
 }
+.header-sensoin-section1{
+  top:1vh;
+  position: absolute;
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: row;
+}
+#header-sensoin-section1-span{
+  font-weight: bold;
+  font-size: 2.4vw;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.header-sensoin-section2{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.header-sensoin-span3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-sensoin-section2-section1{
+  height: 7vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.header-sensoin-section2-section1-section1{
+  height: 5vh;
+  border-radius: 0 50px 50px 0; 
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.hssss-input{
+  border-left: 2px solid #455a64 ;
+  height: 100%;
+  float: left;
+  margin: 0;
+  width: 91%;
+  background-color: aliceblue;
+}
+.hsss1-matform{
+  height: 5vh;
+  background-color: aliceblue;
+  width: 30%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px 0 0 50px ;
+  padding-top: 0.5vh;
+}
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;

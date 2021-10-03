@@ -17,34 +17,46 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-card class="header-sensoin">
-      <section style="top:1vh;position: absolute;width: 100%;background-color: red;display: flex;justify-content:space-around;align-items: center;flex-direction: row;">
+      <section class="header-sensoin-section1">
         <span>
-          Hotline: (+221) 77 777 78 90
+          TEL: (+221) 77 523 97 13
+        </span >
+        <span id="header-sensoin-section1-span">
+         Bienvenu(e) chez Keur Nogaye
         </span>
-        <span>
-          Bienvenue sur SENSOIN
-        </span>
-        <span style="background-color: hotpink;display: flex;justify-content: center;align-items: center;">
+        <span class="header-sensoin-span3" style="width: 200px;">
          
           <button mat-button [matMenuTriggerFor]="menu">
-            <mat-icon >account_circle</mat-icon>
-            Account
+            <mat-icon>account_circle</mat-icon>
+            Compte
             <mat-icon>keyboard_arrow_down</mat-icon>
           </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item>Item 1</button>
-            <button mat-menu-item>Item 2</button>
+          <mat-menu  #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>settings</mat-icon>
+              Parametres
+            </button>
+            <button mat-menu-item>
+              <mat-icon>info</mat-icon>
+              Aide
+            </button>
+            <button mat-menu-item>
+              <mat-icon>power_settings_new</mat-icon>
+              Deconnexion
+            </button> 
           </mat-menu>
         </span>
        </section>
-        <hr style="background: honeydew;height: 3px;">
-        <section style="width: 100%;display: flex;justify-content: space-around;align-items: center;flex-direction: row;">
+        <hr style="background: honeydew;height: 0.7px;background-color: #e5e7e9;width: 90%;">
+
+        <section class="header-sensoin-section2">
           <span>
-          WELCOME TO SENSOIN
+            <img style="width: 4vw;" src="../../assets/img/logo.svg" alt="Logo">
+            KEUR NOGAYE
         </span>
-        <section style="height: 7vh;width: 50%;display: flex;align-items: center;flex-direction: row;">
-          <mat-form-field style="height: 100%;background-color: aliceblue;width: 30%;float: left;border-radius: 50px 0 0 50px ;">
-            <mat-label style="text-align: center;">Select an option</mat-label>
+        <section class="header-sensoin-section2-section1">
+          <mat-form-field class="hsss1-matform">
+            <mat-label>Selectionner</mat-label>
             <mat-select matInput>
               <mat-option value="1">Option 1</mat-option>
               <mat-option value="2">Option 2</mat-option>
@@ -52,19 +64,25 @@
             </mat-select>
           </mat-form-field>
           
-          <section style="height: 100%;border-radius: 0 50px 50px 0; width: 100%;background-color: teal;display: flex;justify-content: center;align-items: center;flex-direction: row;">
-            <input style="height: 100%;float: left;margin: 0;width: 95%;background-color: aliceblue;" placeholder="Chercher" matInput>
-            <mat-icon style="float: right;">search</mat-icon>  
+          <section class="header-sensoin-section2-section1-section1">
+            <input class="hssss-input" placeholder="Chercher" matInput>
+            <section style="width: 7%;height: 100%;display: flex;align-items: center;justify-content: center;">
+              <mat-icon style="color: #455a64;">search</mat-icon>  
+            </section>
           </section>
-         
+        
+
         </section>
         <span>
-          WELCOME TO SENSOIN
+          <button mat-button>
+          <mat-icon>add_shopping_cart</mat-icon>
+          AJouter Panier
+          </button>
         </span>
         </section>
      
     </mat-card>
-    <mat-toolbar style="background-color:  #e5e7e9 ;">
+    <mat-toolbar style="background-color:  #e5e7e9; border-bottom: 1px solid #455a64;">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -75,7 +93,7 @@
       </button>
       <section style="display: flex;justify-content: center;align-items: center;margin: 0 auto;">
         <div style="margin: 0 auto;" class="example-button-row">
-          <button mat-button class="button-header">PAGE ACCEUIL</button>
+          <button mat-button class="button-header">ACCEUIL</button>
           <button mat-button class="button-header">SOINS VISAGE</button>
           <button mat-button class="button-header">SOINS MAINS</button>
           <button mat-button class="button-header">SOINS PIEDS</button>
@@ -85,6 +103,7 @@
         </div>
       </section>
     </mat-toolbar>
+
     <!-- Add Content Here -->
     <section style="background-color: #e5e7e9;padding: 3vh 4vw;">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -195,7 +214,7 @@
   </section>
 </section>
   <hr>
-  <section style="width: 100%;background-color: #455a64;color: aliceblue;height: 50vh;padding-top: 2vh;">
+  <section style="width: 100%;background-color: #ee7e98;color: aliceblue;height: 50vh;padding-top: 2vh;">
     <section style="background-color: brown;width: 80%;height: 10vh;margin: 0 auto;display: flex;justify-content: center;align-items: center;flex-direction: row;">
         <section style="width: 50%;display: flex;justify-content: center;align-items: center;flex-direction: column;">
           <span style="font-weight: bold;font-size: 1.5vw;">
